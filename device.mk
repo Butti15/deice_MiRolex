@@ -15,7 +15,7 @@
 #
 
 DEVICE_PATH := $(LOCAL_PATH)
-
+ALLOW_MISSING_DEPENDENCIES=true
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
@@ -26,3 +26,6 @@ include $(DEVICE_PATH)/product/*.mk
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/rolex/rolex-vendor.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.mod.version=$(DU_BUILD_TYPE)-$(DU_BASE_VERSION)-$(DATE)
