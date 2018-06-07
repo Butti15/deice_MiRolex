@@ -1,0 +1,6 @@
+#
+#System.prop for Rolex
+#
+
+#Mod
+ro.mod.version=$(DU_BUILD_TYPE)-$(DU_BASE_VERSION)-$(DATE)

@@ -18,6 +18,9 @@ DEVICE_PATH := device/xiaomi/rolex
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
+# Properties
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
 # Inherit device-specific board fragments
 include $(DEVICE_PATH)/board/*.mk
 
