@@ -36,6 +36,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 4A
 PRODUCT_NAME := screwd_rolex
 
+#Fuck
+export KBUILD_BUILD_USER=Butti
+export KBUILD_BUILD_HOST=kaiz
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := rolex
