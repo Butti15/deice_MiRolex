@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,15 +14,5 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := $(LOCAL_PATH)
-ALLOW_MISSING_DEPENDENCIES=true
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
-
-# Include device-specific product fragments
-include $(DEVICE_PATH)/product/*.mk
-
-# Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/rolex/rolex-vendor.mk)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/screwd_rolex.mk
