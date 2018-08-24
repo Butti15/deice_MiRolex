@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,17 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-DEVICE_PATH := device/xiaomi/rolex
-
-TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
-
-# Inherit device-specific board fragments
-include $(DEVICE_PATH)/board/*.mk
-
-# Inherit the proprietary files
--include vendor/xiaomi/rolex/BoardConfigVendor.mk
-
-# Properties
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/du.mk
