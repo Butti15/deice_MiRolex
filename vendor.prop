@@ -2,4 +2,6 @@
 # system.prop for rolex
 #
 
+#Version
 ro.du.version=12.5
+ro.mod.version=12.5
