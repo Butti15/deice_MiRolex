@@ -25,5 +25,4 @@ include $(DEVICE_PATH)/board/*.mk
 -include vendor/xiaomi/rolex/BoardConfigVendor.mk
 
 # Properties
-TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
-
+TARGET_SYSTEM_PROP := device/xiaomi/rolex/system.prop
